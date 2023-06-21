@@ -1,10 +1,9 @@
 {
   "$schema": "https://docs.facets.cloud/schemas/application/instances/application.schema",
   "kind": "facets.modules.common.application",
-  "disabled": false,
+  "disabled": true,
   "apiVersion": "v2",
-  "metadata": {
-  },
+  "metadata": {},
   "spec": {
     "env": {
       "KILLBILL_DAO_PASSWORD": {
