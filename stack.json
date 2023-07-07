@@ -7,8 +7,19 @@
         "plugins": [
         ]
     },
-    "clusterVariablesMeta": {}
-    
-
-
+    "clusterVariablesMeta": {
+        "GOOGLE_CLIENT_ID": {
+        "value": "dummy"
+        },
+        "NEWRELIC_LICENSE_KEY": {
+            "value": "dummy"
+        },
+        "INTERNAL_API_AUTH_TOKEN": {
+            "value": "dummy",
+            "secret": true
+        },
+        "ADMIN_USER": {
+            "value": "dummy"
+        }
+    }
 }
