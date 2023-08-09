@@ -45,8 +45,10 @@
     ],
     "release": {
       "strategy": "RollingUpdate",
+      "image": "static",
       "build": {
-        "image": "killbill/kaui:latest"
+        "image": "killbill/kaui:latest",
+        "name": "ciName"
       }
     },
     "runtime": {
