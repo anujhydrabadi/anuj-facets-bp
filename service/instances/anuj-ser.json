@@ -10,9 +10,12 @@
     "type": "application",
     "enable_host_anti_affinity": true,
     "release": {
-      "image": "",
+      "image": "staticImageUrl",
       "strategy": {
         "type": "Recreate"
+      },
+      "build": {
+        "name": "anuj-the-continuous-integrator"
       }
     },
     "runtime": {
