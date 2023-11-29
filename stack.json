@@ -5,5 +5,13 @@
   },
   "composition": {
     "plugins": []
+  },
+  "clusterVariablesMeta": {
+    "GOOGLE_CLIENT_ID": {
+      "secret": false,
+      "value": "xnopqiwndpd39ddnoq",
+      "global": true,
+      "description": "my description"
+    }
   }
 }
