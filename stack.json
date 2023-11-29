@@ -21,6 +21,12 @@
       "secret": false,
       "value": "dummy",
       "global": false
+    },
+    "GOOGLE_CLIENT_ID": {
+      "secret": false,
+      "value": "xnopqiwndpd39ddnoq",
+      "global": true,
+      "description": "my description"
     }
   }
 }
