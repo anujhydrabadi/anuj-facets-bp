@@ -1,25 +1,26 @@
 {
-    "$schema": "https://docs.facets.cloud/schemas/stack.schema",
-    "componentVersions": {
-        "KUBERNETES": "1.21"
+  "$schema": "https://docs.facets.cloud/schemas/stack.schema",
+  "componentVersions": {
+    "KUBERNETES": "1.21"
+  },
+  "composition": {
+    "plugins": []
+  },
+  "clusterVariablesMeta": {
+    "NEWRELIC_LICENSE_KEY": {
+      "secret": false,
+      "value": "dummy",
+      "global": false
     },
-    "composition": {
-        "plugins": [
-        ]
+    "INTERNAL_API_AUTH_TOKEN": {
+      "secret": true,
+      "value": "dummy",
+      "global": false
     },
-    "clusterVariablesMeta": {
-        "GOOGLE_CLIENT_ID": {
-        "value": "dummy"
-        },
-        "NEWRELIC_LICENSE_KEY": {
-            "value": "dummy"
-        },
-        "INTERNAL_API_AUTH_TOKEN": {
-            "value": "dummy",
-            "secret": true
-        },
-        "ADMIN_USER": {
-            "value": "dummy"
-        }
+    "ADMIN_USER": {
+      "secret": false,
+      "value": "dummy",
+      "global": false
     }
+  }
 }
