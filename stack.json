@@ -6,27 +6,5 @@
   "composition": {
     "plugins": []
   },
-  "clusterVariablesMeta": {
-    "NEWRELIC_LICENSE_KEY": {
-      "secret": true,
-      "value": "nwnpwqicdniqnd",
-      "global": true
-    },
-    "INTERNAL_API_AUTH_TOKEN": {
-      "secret": true,
-      "value": "dummy",
-      "global": false
-    },
-    "ADMIN_USER": {
-      "secret": false,
-      "value": "dummy",
-      "global": false
-    },
-    "GOOGLE_CLIENT_ID": {
-      "secret": false,
-      "value": "xnopqiwndpd39ddnoq",
-      "global": true,
-      "description": "my description"
-    }
-  }
+  "clusterVariablesMeta": {}
 }
