@@ -8,9 +8,9 @@
   },
   "clusterVariablesMeta": {
     "NEWRELIC_LICENSE_KEY": {
-      "secret": false,
-      "value": "dummy",
-      "global": false
+      "secret": true,
+      "value": "nwnpwqicdniqnd",
+      "global": true
     },
     "INTERNAL_API_AUTH_TOKEN": {
       "secret": true,
