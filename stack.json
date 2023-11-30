@@ -12,6 +12,12 @@
       "value": "xnopqiwndpd39ddnoq",
       "global": true,
       "description": "my description"
+    },
+    "PROFILE": {
+      "secret": true,
+      "value": "staging",
+      "global": false,
+      "description": "the active profile"
     }
   }
 }
