@@ -30,6 +30,18 @@
       "value": "test-new-secret",
       "global": true,
       "description": "random secret addition"
+    },
+    "testing-secret": {
+      "secret": true,
+      "value": "testi-secret124",
+      "global": true,
+      "description": "test"
+    },
+    "test-variable": {
+      "secret": false,
+      "value": "test-var124",
+      "global": false,
+      "description": "testing var add"
     }
   }
 }
