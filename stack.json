@@ -9,13 +9,13 @@
   "clusterVariablesMeta": {
     "GOOGLE_CLIENT_ID": {
       "secret": false,
-      "value": "xnopqiwndpd39ddnotestq",
+      "value": "xnopqiwndpd39ddnotestqasdas",
       "global": true,
       "description": "my description"
     },
     "PROFILE": {
       "secret": true,
-      "value": "test-profile",
+      "value": "testing-profile",
       "global": false,
       "description": "the active profile"
     }
