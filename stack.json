@@ -18,6 +18,18 @@
       "value": "testing-profile",
       "global": false,
       "description": "the active profile"
+    },
+    "testing-secret-add": {
+      "secret": true,
+      "value": "test-secret-add",
+      "global": true,
+      "description": "testing secret addition"
+    },
+    "testing-var-add": {
+      "secret": false,
+      "value": "testing-var-add",
+      "global": false,
+      "description": "testing variable add"
     }
   }
 }
