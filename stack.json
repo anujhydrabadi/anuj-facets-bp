@@ -24,6 +24,12 @@
       "value": "testing-var-add",
       "global": false,
       "description": "testing variable add"
+    },
+    "test-new-secret": {
+      "secret": true,
+      "value": "test-new-secret",
+      "global": true,
+      "description": "random secret addition"
     }
   }
 }
