@@ -18,11 +18,6 @@
       "value": "tesasd",
       "global": true,
       "description": "the activdasde profile"
-    },
-    "test-secret": {
-      "secret": true,
-      "global": true,
-      "description": "testing secret 345"
     }
   }
 }
