@@ -19,11 +19,6 @@
       "global": true,
       "description": "the activdasde profile"
     },
-    "test-new-secret": {
-      "secret": true,
-      "global": true,
-      "description": "random secret addition"
-    },
     "testing-secret": {
       "secret": true,
       "global": true,
