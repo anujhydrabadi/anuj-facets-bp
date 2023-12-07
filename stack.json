@@ -19,11 +19,6 @@
       "global": true,
       "description": "the activdasde profile"
     },
-    "testing-secret": {
-      "secret": true,
-      "global": true,
-      "description": "test"
-    },
     "test-var353": {
       "secret": false,
       "global": false,
