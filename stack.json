@@ -10,8 +10,8 @@
     "GOOGLE_CLIENT_ID": {
       "secret": true,
       "value": "test124",
-      "global": false,
-      "description": "test124"
+      "global": true,
+      "description": "test12123"
     },
     "PROFILE": {
       "secret": true,
