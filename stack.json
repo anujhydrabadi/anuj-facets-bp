@@ -8,15 +8,15 @@
   },
   "clusterVariablesMeta": {
     "GOOGLE_CLIENT_ID": {
-      "secret": false,
+      "secret": true,
       "value": "xnopqiwndpd39ddnotestqasdas",
-      "global": true,
-      "description": "my description"
+      "global": false,
+      "description": "my description123"
     },
     "PROFILE": {
       "secret": true,
-      "value": "testing-profile",
-      "global": false,
+      "value": "****",
+      "global": true,
       "description": "the active profile"
     },
     "testing-var-add": {
@@ -27,13 +27,13 @@
     },
     "test-new-secret": {
       "secret": true,
-      "value": "test-new-secret",
+      "value": "****",
       "global": true,
       "description": "random secret addition"
     },
     "testing-secret": {
       "secret": true,
-      "value": "testi-secret124",
+      "value": "****",
       "global": true,
       "description": "test"
     },
