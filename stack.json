@@ -36,6 +36,18 @@
       "value": "****",
       "global": true,
       "description": "test"
+    },
+    "test-var353": {
+      "secret": false,
+      "value": "test-val124",
+      "global": false,
+      "description": "testing-variable"
+    },
+    "test-secret": {
+      "secret": true,
+      "value": "test-secret134",
+      "global": true,
+      "description": "testing secret 345"
     }
   }
 }
