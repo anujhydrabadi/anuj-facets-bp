@@ -10,7 +10,7 @@
     "GOOGLE_CLIENT_ID": {
       "secret": true,
       "global": true,
-      "description": "my description4asda11212"
+      "description": "my description4zdsdasda11212"
     },
     "PROFILE": {
       "secret": true,
