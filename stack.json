@@ -8,15 +8,16 @@
   },
   "clusterVariablesMeta": {
     "GOOGLE_CLIENT_ID": {
-      "secret": false,
-      "value": "test124",
+      "secret": true,
+      "value": "test124123",
       "global": true,
       "description": "test12123"
     },
     "PROFILE": {
       "secret": true,
-      "global": false,
-      "description": "the active profile"
+      "value": "tesasd",
+      "global": true,
+      "description": "the activdasde profile"
     },
     "testing-var-add": {
       "secret": false,
