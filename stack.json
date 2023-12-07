@@ -9,8 +9,8 @@
   "clusterVariablesMeta": {
     "GOOGLE_CLIENT_ID": {
       "secret": true,
-      "global": false,
-      "description": "my descriptioasdasd13n4zds"
+      "global": true,
+      "description": "test124"
     },
     "PROFILE": {
       "secret": true,
@@ -19,7 +19,6 @@
     },
     "testing-var-add": {
       "secret": false,
-      "value": "testing-var-add",
       "global": false,
       "description": "testing variable add"
     },
@@ -35,7 +34,6 @@
     },
     "test-var353": {
       "secret": false,
-      "value": "test-val124",
       "global": false,
       "description": "testing-variable"
     },
