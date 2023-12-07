@@ -8,8 +8,8 @@
   },
   "clusterVariablesMeta": {
     "GOOGLE_CLIENT_ID": {
-      "secret": true,
-      "value": "test135",
+      "secret": false,
+      "value": "****",
       "global": false,
       "description": "my descriptioasdasd13n4zds"
     },
