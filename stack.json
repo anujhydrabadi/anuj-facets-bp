@@ -36,12 +36,6 @@
       "value": "****",
       "global": true,
       "description": "test"
-    },
-    "test-variable": {
-      "secret": false,
-      "value": "test-var124",
-      "global": false,
-      "description": "testing var add"
     }
   }
 }
