@@ -3,7 +3,7 @@
   "flavor": "default",
   "metadata": {
     "labels": {},
-    "git": {
+    "github": {
       "repository_url": "https://github.com/anujhydrabadi/demo.git",
       "path": "."
     }
