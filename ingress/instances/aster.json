@@ -1,0 +1,352 @@
+{
+	"flavor": "nlb_nginx",
+	"metadata": {
+		"name": "apim",
+		"annotations": {
+			"nginx.ingress.kubernetes.io/use-regex": "true",
+			"nginx.ingress.kubernetes.io/enable-cors": "true",
+			"nginx.ingress.kubernetes.io/cors-allow-headers": "traceId,Permissions-Policy,platform,Referer,X-Frame-Options,x-patient-apiversion,x-doctor-apiversion,referrer-policy,x-user-agent,deviceid,x-xss-protection,x-content-type-options,content-security-policy,DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization,strict-transport-security,X-Environment-Key,x-environment-key",
+			"nginx.ingress.kubernetes.io/cors-allow-origin": "https://web-${blueprint.self.variables.ENV_SUFFIX}.myaster.com,https://doctor-web-${blueprint.self.variables.ENV_SUFFIX}.myaster.com,http://localhost:9000,http://localhost:3000,https://flagsmith-web-${blueprint.self.variables.ENV_SUFFIX}.myaster.com,https://flagsmith-api-${blueprint.self.variables.ENV_SUFFIX}.myaster.com,https://flagsmith-web.myaster.com,https://flagsmith-api.myaster.com",
+			"nginx.ingress.kubernetes.io/cors-allow-methods": "PUT,GET,POST,OPTIONS,DELETE"
+		}
+	},
+	"$schema": "https://facets-cloud.github.io/facets-schemas/schemas/loadbalancer/loadbalancer.schema.json",
+	"advanced": {
+		"nginx_ingress_controller": {
+			"values": {
+				"controller": {
+					"extraArgs": {
+						"enable-ssl-chain-completion": "false"
+					}
+				}
+			}
+		}
+	},
+	"kind": "ingress",
+	"disabled": false,
+	"version": "0.1",
+	"spec": {
+		"basicAuth": false,
+		"private": false,
+		"force_ssl_redirection": true,
+		"domains": {
+			"myaster": {
+				"domain": "myaster.com",
+				"alias": "",
+				"certificate_reference": "myaster-certificate",
+				"rules": {
+					"payment-service-v2": {
+						"comment": "Routing paths to payment-service-v2",
+						"domain_prefix": "",
+						"path": "/",
+						"port": "",
+						"service_name": ""
+					}
+				}
+			},
+			"myastertools": {
+				"domain": "myastertools.com",
+				"alias": "",
+				"certificate_reference": "myastertools-certificate",
+				"rules": {
+					"search-admin-portal": {
+						"comment": "Routing paths to search-admin-portal",
+						"domain_prefix": "khoj-portal-${blueprint.self.variables.ENV_SUFFIX}",
+						"path": "/",
+						"port": "${service.search-admin-portal.out.interfaces.main.port}",
+						"service_name": "${service.search-admin-portal.out.interfaces.main.name}"
+					},
+					"erx-admin-portal": {
+						"comment": "Routing paths to erx-admin-portal",
+						"domain_prefix": "rxhub-${blueprint.self.variables.ENV_SUFFIX}",
+						"path": "/",
+						"port": "${service.erx-admin-portal.out.interfaces.main.port}",
+						"service_name": "${service.erx-admin-portal.out.interfaces.main.name}"
+					}
+				}
+			},
+			"paymentsmyaster": {
+				"domain": "uat-01-payments.myaster.com",
+				"alias": "paymentsmyaster",
+				"certificate_reference": "myaster-certificate",
+				"rules": {
+					"payment-service-v2": {
+						"comment": "Routing paths to payment-service-v2",
+						"domain_prefix": "",
+						"path": "/",
+						"port": "${service.payment-service-v2-svc.out.interfaces.main.port}",
+						"service_name": "${service.payment-service-v2-svc.out.interfaces.main.name}"
+					}
+				}
+			}
+		},
+		"rules": {
+			"search-service": {
+				"comment": "Routing paths to doctor listing service",
+				"domain_prefix": "search-service",
+				"path": "/",
+				"port": "${service.search-service.out.interfaces.main.port}",
+				"service_name": "${service.search-service.out.interfaces.main.name}"
+			},
+			"search-suggestion-service": {
+				"comment": "Routing paths to search suggestion service",
+				"domain_prefix": "search-suggestion-service",
+				"path": "/",
+				"port": "${service.search-suggestion-service.out.interfaces.main.port}",
+				"service_name": "${service.search-suggestion-service.out.interfaces.main.name}"
+			},
+			"feedback-service": {
+				"comment": "Routing paths to feedback service",
+				"domain_prefix": "feedback-service",
+				"path": "/",
+				"port": "${service.feedback-service.out.interfaces.main.port}",
+				"service_name": "${service.feedback-service.out.interfaces.main.name}"
+			},
+			"health-profile": {
+				"comment": "Routing paths to health profile",
+				"domain_prefix": "health-profile",
+				"path": "/",
+				"port": "${service.health-profile.out.interfaces.main.port}",
+				"service_name": "${service.health-profile.out.interfaces.main.name}"
+			},
+			"one-cms": {
+				"comment": "Routing paths to one cms",
+				"domain_prefix": "one-cms",
+				"path": "/",
+				"port": "${service.one-cms.out.interfaces.main.port}",
+				"service_name": "${service.one-cms.out.interfaces.main.name}"
+			},
+			"doctor-search": {
+				"comment": "Routing paths to doctor search",
+				"domain_prefix": "doctor-search",
+				"path": "/",
+				"port": "${service.doctor-search.out.interfaces.main.port}",
+				"service_name": "${service.doctor-search.out.interfaces.main.name}"
+			},
+			"homecare-search": {
+				"comment": "Routing paths to homecare search",
+				"domain_prefix": "homecare-search",
+				"path": "/",
+				"port": "${service.homecare-search.out.interfaces.main.port}",
+				"service_name": "${service.homecare-search.out.interfaces.main.name}"
+			},
+			"homecare-booking": {
+				"comment": "Routing paths to homecare booking",
+				"domain_prefix": "homecare-booking",
+				"path": "/",
+				"port": "${service.homecare-booking.out.interfaces.main.port}",
+				"service_name": "${service.homecare-booking.out.interfaces.main.name}"
+			},
+			"homecare-data-import": {
+				"comment": "Routing paths to homecare data import",
+				"domain_prefix": "homecare-data-import",
+				"path": "/",
+				"port": "${service.homecare-data-import.out.interfaces.main.port}",
+				"service_name": "${service.homecare-data-import.out.interfaces.main.name}"
+			},
+			"his-integration-service": {
+				"comment": "Routing paths to HIS integration service",
+				"domain_prefix": "his-integration-service",
+				"path": "/",
+				"port": "${service.his-integration-service.out.interfaces.main.port}",
+				"service_name": "${service.his-integration-service.out.interfaces.main.name}"
+			},
+			"promotion-service": {
+				"comment": "Routing paths to promotion service",
+				"domain_prefix": "promotion-service",
+				"path": "/",
+				"port": "${service.promotion-service.out.interfaces.main.port}",
+				"service_name": "${service.promotion-service.out.interfaces.main.name}"
+			},
+			"product-ingestion-service": {
+				"comment": "Routing paths to product ingestion service",
+				"domain_prefix": "product-ingestion-service",
+				"path": "/",
+				"port": "${service.product-ingestion-service.out.interfaces.main.port}",
+				"service_name": "${service.product-ingestion-service.out.interfaces.main.name}"
+			},
+			"ae-cron-jobs": {
+				"comment": "Routing paths to ae-cron-jobs",
+				"domain_prefix": "ae-cron-jobs",
+				"path": "/",
+				"port": "${service.ae-cron-jobs.out.interfaces.main.port}",
+				"service_name": "${service.ae-cron-jobs.out.interfaces.main.name}"
+			},
+			"cart-service": {
+				"comment": "Routing paths to cart service",
+				"domain_prefix": "cart-service",
+				"path": "/",
+				"port": "${service.cart-service.out.interfaces.main.port}",
+				"service_name": "${service.cart-service.out.interfaces.main.name}"
+			},
+			"product-search-index-service": {
+				"comment": "Routing paths to product-search-index-service",
+				"domain_prefix": "product-search-index-service",
+				"path": "/",
+				"port": "${service.product-search-index-service.out.interfaces.main.port}",
+				"service_name": "${service.product-search-index-service.out.interfaces.main.name}"
+			},
+			"teleconsult-index-service": {
+				"comment": "Routing paths to teleconsult-index-service",
+				"domain_prefix": "teleconsult-index-service",
+				"path": "/",
+				"port": "${service.teleconsult-index-service.out.interfaces.main.port}",
+				"service_name": "${service.teleconsult-index-service.out.interfaces.main.name}"
+			},
+			"teleconsult-search-service": {
+				"comment": "Routing paths to teleconsult-search-service",
+				"domain_prefix": "teleconsult-search-service",
+				"path": "/",
+				"port": "${service.teleconsult-search-service.out.interfaces.main.port}",
+				"service_name": "${service.teleconsult-search-service.out.interfaces.main.name}"
+			},
+			"erx-service": {
+				"comment": "Routing paths to erx-service",
+				"domain_prefix": "erx-service",
+				"path": "/",
+				"port": "${service.erx-service.out.interfaces.main.port}",
+				"service_name": "${service.erx-service.out.interfaces.main.name}"
+			},
+			"recommendation-catalog-feed-service": {
+				"comment": "Routing paths to recommendation-catalog-feed-service",
+				"domain_prefix": "product-feed-service",
+				"path": "/",
+				"port": "${service.recommendation-catalog-feed-service.out.interfaces.main.port}",
+				"service_name": "${service.recommendation-catalog-feed-service.out.interfaces.main.name}"
+			},
+			"search-term-service": {
+				"comment": "Routing paths to search-term-service",
+				"domain_prefix": "search-term-service",
+				"path": "/",
+				"port": "${service.search-term-service.out.interfaces.main.port}",
+				"service_name": "${service.search-term-service.out.interfaces.main.name}"
+			},
+			"homecare-search-indexing-service": {
+				"comment": "Routing paths to homecare-search-indexing-service",
+				"domain_prefix": "homecare-search-indexing-service",
+				"path": "/",
+				"port": "${service.homecare-search-indexing-service.out.interfaces.main.port}",
+				"service_name": "${service.homecare-search-indexing-service.out.interfaces.main.name}"
+			},
+			"discount-read-service": {
+				"comment": "Routing paths to discount-read-service",
+				"domain_prefix": "discount-read-service",
+				"path": "/",
+				"port": "${service.discount-read-service.out.interfaces.main.port}",
+				"service_name": "${service.discount-read-service.out.interfaces.main.name}"
+			},
+			"discount-write-service": {
+				"comment": "Routing paths to discount-write-service",
+				"domain_prefix": "discount-write-service",
+				"path": "/",
+				"port": "${service.discount-write-service.out.interfaces.main.port}",
+				"service_name": "${service.discount-write-service.out.interfaces.main.name}"
+			},
+			"platform-service": {
+				"comment": "Routing paths to platform-service",
+				"domain_prefix": "platform-service",
+				"path": "/",
+				"port": "${service.platform-service.out.interfaces.main.port}",
+				"service_name": "${service.platform-service.out.interfaces.main.name}"
+			},
+			"search-admin-portal": {
+				"comment": "Routing paths to search-admin-portal",
+				"domain_prefix": "search-admin-portal",
+				"path": "/",
+				"port": "${service.search-admin-portal.out.interfaces.main.port}",
+				"service_name": "${service.search-admin-portal.out.interfaces.main.name}"
+			},
+			"metrics-collector": {
+				"comment": "Routing paths to metrics-collector",
+				"domain_prefix": "metrics-collector",
+				"path": "/",
+				"port": "${service.metrics-collector.out.interfaces.main.port}",
+				"service_name": "${service.metrics-collector.out.interfaces.main.name}"
+			},
+			"order-consumer-service": {
+				"comment": "Routing paths to order-consumer-service",
+				"domain_prefix": "order-consumer-service",
+				"path": "/",
+				"port": "${service.order-consumer-service.out.interfaces.main.port}",
+				"service_name": "${service.order-consumer-service.out.interfaces.main.name}"
+			},
+			"delivery-service": {
+				"comment": "Routing paths to delivery-service-svc",
+				"domain_prefix": "delivery-service",
+				"path": "/",
+				"port": "${service.delivery-service-svc.out.interfaces.main.port}",
+				"service_name": "${service.delivery-service-svc.out.interfaces.main.name}"
+			},
+			"product-service": {
+				"comment": "Routing paths to product-service",
+				"domain_prefix": "product-service",
+				"path": "/",
+				"port": "${service.product-service.out.interfaces.main.port}",
+				"service_name": "${service.product-service.out.interfaces.main.name}"
+			},
+			"order-service": {
+				"comment": "Routing paths to order-service",
+				"domain_prefix": "order-service",
+				"path": "/",
+				"port": "${service.order-service.out.interfaces.main.port}",
+				"service_name": "${service.order-service.out.interfaces.main.name}"
+			},
+			"notification-service": {
+				"comment": "Routing paths to notification-service",
+				"domain_prefix": "notification-service",
+				"path": "/",
+				"port": "${service.notification-service.out.interfaces.main.port}",
+				"service_name": "${service.notification-service.out.interfaces.main.name}"
+			},
+			"erx-admin-portal": {
+				"comment": "Routing paths to erx-admin-portal",
+				"domain_prefix": "erx-admin-portal",
+				"path": "/",
+				"port": "${service.erx-admin-portal.out.interfaces.main.port}",
+				"service_name": "${service.erx-admin-portal.out.interfaces.main.name}"
+			},
+			"secure-integration-service": {
+				"comment": "Routing paths to secure-integration-service",
+				"domain_prefix": "secure-integration-service",
+				"path": "/",
+				"port": "${service.secure-integration-service.out.interfaces.main.port}",
+				"service_name": "${service.secure-integration-service.out.interfaces.main.name}"
+			},
+			"oms-integration-service": {
+				"comment": "Routing paths to oms-integration-service",
+				"domain_prefix": "oms-integration-service",
+				"path": "/",
+				"port": "${service.oms-integration-service.out.interfaces.main.port}",
+				"service_name": "${service.oms-integration-service.out.interfaces.main.name}"
+			},
+			"commerce-integration-service": {
+				"comment": "Routing paths to commerce-integration-service",
+				"domain_prefix": "commerce-integration-service",
+				"path": "/",
+				"port": "${service.commerce-integration-service.out.interfaces.main.port}",
+				"service_name": "${service.commerce-integration-service.out.interfaces.main.name}"
+			},
+			"ticket-service": {
+				"comment": "Routing paths to ticket-service",
+				"domain_prefix": "ticket-service",
+				"path": "/",
+				"port": "${service.ticket-service.out.interfaces.main.port}",
+				"service_name": "${service.ticket-service.out.interfaces.main.name}"
+			},
+			"identity-service": {
+				"comment": "Routing paths to identity-service",
+				"domain_prefix": "identity-service",
+				"path": "/",
+				"port": "${service.identity-service.out.interfaces.main.port}",
+				"service_name": "${service.identity-service.out.interfaces.main.name}"
+			},
+			"payment-service-v2": {
+				"comment": "Routing paths to payment-service-v2",
+				"domain_prefix": "payment-service",
+				"path": "/",
+				"port": "${service.payment-service-v2-svc.out.interfaces.main.port}",
+				"service_name": "${service.payment-service-v2-svc.out.interfaces.main.name}"
+			}
+		}
+	}
+}
