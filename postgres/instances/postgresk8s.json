@@ -8,12 +8,12 @@
     "size": {
       "writer": {
         "cpu": "5",
-        "memory": "1000Mi",
+        "memory": "5000Mi",
         "volume": "8G"
       },
       "reader": {
         "cpu": "5",
-        "memory": "800Mi",
+        "memory": "5000Mi",
         "volume": "8G",
         "instance_count": 1
       }
