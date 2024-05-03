@@ -3,7 +3,7 @@
   "flavor": "k8s",
   "metadata": {},
   "kind": "postgres",
-  "disabled": true,
+  "disabled": false,
   "spec": {
     "postgres_version": "15.3.0",
     "size": {
