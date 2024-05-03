@@ -13,7 +13,7 @@
       },
       "reader": {
         "cpu": 5,
-        "memory": "9000m",
+        "memory": "9000Mi",
         "volume": "8G",
         "instance_count": 1
       }
