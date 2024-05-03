@@ -7,13 +7,13 @@
     "postgres_version": "15.3.0",
     "size": {
       "writer": {
-        "cpu": "5000m",
-        "memory": "1000Mi",
+        "cpu": "1000m",
+        "memory": "5000Mi",
         "volume": "8G"
       },
       "reader": {
-        "cpu": "5000m",
-        "memory": "800Mi",
+        "cpu": "1000m",
+        "memory": "9000Mi",
         "volume": "8G",
         "instance_count": 1
       }
