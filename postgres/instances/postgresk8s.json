@@ -1,5 +1,5 @@
 {
-  "flavor": "k8s",
+  "flavor": "aurora",
   "metadata": {},
   "kind": "postgres",
   "disabled": false,
