@@ -1,5 +1,4 @@
 {
-  "$schema": "https://facets-cloud.github.io/facets-schemas/schemas/service/service.schema.json",
   "flavor": "default",
   "metadata": {
     "labels": {},
@@ -33,6 +32,11 @@
       "ports": {
         "http": {
           "port": "8080",
+          "protocol": "tcp"
+        },
+        "httpsss": {
+          "port": "8080",
+          "service_port": "8082",
           "protocol": "tcp"
         }
       },
