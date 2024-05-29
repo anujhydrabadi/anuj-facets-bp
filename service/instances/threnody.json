@@ -1,5 +1,4 @@
 {
-  "$schema": "https://facets-cloud.github.io/facets-schemas/schemas/service/service.schema.json",
   "flavor": "default",
   "metadata": {
     "labels": {},
@@ -22,7 +21,8 @@
       "build": {
         "artifactory": "default",
         "name": "replace-with-app-name"
-      }
+      },
+      "image": "${blueprint.self.artifacts.anuj-facets-bp-threnody}"
     },
     "runtime": {
       "autoscaling": {
