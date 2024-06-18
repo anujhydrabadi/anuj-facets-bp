@@ -1,5 +1,4 @@
 {
-  "$schema": "https://facets-cloud.github.io/facets-schemas/schemas/rabbitmq/rabbitmq.schema.json",
   "flavor": "k8s",
   "kind": "rabbitmq",
   "version": "latest",
@@ -15,7 +14,7 @@
     "size": {
       "cpu": "1000m",
       "memory": "3Gi",
-      "volume": "1Gi",
+      "volume": "${config_map.my-cm.out.attribute.name}",
       "replica_count": 3
     }
   },
