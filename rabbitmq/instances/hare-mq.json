@@ -14,7 +14,7 @@
     "size": {
       "cpu": "1000m",
       "memory": "3Gi",
-      "volume": "${config_map.my-cm.out.attribute.name}",
+      "volume": "${config_map.my-cm.out.attributes.name}",
       "replica_count": 3
     }
   },
