@@ -23,6 +23,11 @@
       "secret": true,
       "value": "mypass",
       "global": false
+    },
+    "X_FACETSINT_MONGO_ANUJ-MONGODB_INTERFACES_WRITER_PASSWORD": {
+      "secret": true,
+      "value": "dummy",
+      "global": false
     }
   }
 }
