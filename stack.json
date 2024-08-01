@@ -18,6 +18,11 @@
       "value": "tesasd",
       "global": true,
       "description": "the activdasde profile"
+    },
+    "X_FACETSINT_ELASTICSEARCH_ANUJ-ES_INTERFACES_WRITER_PASSWORD": {
+      "secret": true,
+      "value": "mypass",
+      "global": false
     }
   }
 }
