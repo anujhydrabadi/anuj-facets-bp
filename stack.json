@@ -28,6 +28,11 @@
       "secret": true,
       "value": "dummy",
       "global": false
+    },
+    "X_FACETSINT_SERVICE_DOUBLE-FAULT_INTERFACES_READER_PASSWORD": {
+      "secret": true,
+      "value": "dummy",
+      "global": false
     }
   }
 }
