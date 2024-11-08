@@ -38,7 +38,8 @@
       "volumes": {}
     },
     "env": {
-      "LOG_LEVEL": "INFO"
+      "LOG_LEVEL": "INFO",
+      "KAFKA_USERNAME": "${kafka.my-kafka.out.interfaces.cluster.username}"
     }
   }
 }
