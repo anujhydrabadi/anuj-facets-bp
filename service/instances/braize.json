@@ -46,7 +46,7 @@
     },
     "env": {
       "LOG_LEVEL": "INFO",
-      "CALADAN": "${service.corrino.out.attributes.namespace}"
+      "CALADAN": "${service.alethkar.out.attributes.namespace}"
     }
   }
 }
