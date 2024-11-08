@@ -39,7 +39,7 @@
     },
     "env": {
       "LOG_LEVEL": "INFO",
-      "KAFKA_USERNAME": "${kafka.their-kafka.out.interfaces.cluster.username}"
+      "KAFKA_USERNAME": "${deleted}"
     }
   }
 }
