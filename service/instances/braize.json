@@ -46,7 +46,7 @@
     },
     "env": {
       "LOG_LEVEL": "INFO",
-      "CALADAN": "${service.geidi-prime.out.attributes.namespace}"
+      "CALADAN": "${service.corrin.out.attributes.namespace}"
     }
   }
 }
