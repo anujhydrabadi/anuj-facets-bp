@@ -1,6 +1,5 @@
 {
-  "$schema": "https://facets-cloud.github.io/facets-schemas/schemas/service/service.schema.json",
-  "flavor": "default",
+  "flavor": "k8s",
   "metadata": {
     "labels": {}
   },
@@ -46,7 +45,8 @@
       "volumes": {}
     },
     "env": {
-      "LOG_LEVEL": "INFO"
+      "LOG_LEVEL": "INFO",
+      "CALADAN": "${service.caladan.out.attributes.namespace}"
     }
   }
 }
