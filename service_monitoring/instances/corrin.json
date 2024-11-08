@@ -83,7 +83,7 @@
   "inputs": {
     "service_attributes": {
       "resource_type": "service",
-      "resource_name": "geidi-prime"
+      "resource_name": "corrin"
     }
   }
 }
