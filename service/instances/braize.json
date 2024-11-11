@@ -46,7 +46,7 @@
     },
     "env": {
       "LOG_LEVEL": "INFO",
-      "CALADAN": "${service.alethkar.out.attributes.namespace}"
+      "CALADAN": "${service.caladan.out.attributes.namespace}"
     }
   }
 }
