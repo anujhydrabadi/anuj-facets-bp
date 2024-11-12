@@ -39,7 +39,10 @@
     },
     "env": {
       "LOG_LEVEL": "INFO",
-      "KAFKA_USERNAME": "${deleted}"
+      "KAFKA_USERNAME": "${deleted}",
+      "USERNAME": "${postgres.anuj-psql-4.out.interfaces.writer.username}",
+      "PASSWORD": "${postgres.anuj-psql-4.out.interfaces.reader.password}",
+      "URL": "${postgres.anuj-psql-4.out.interfaces.writer.connection_string}"
     }
   }
 }
