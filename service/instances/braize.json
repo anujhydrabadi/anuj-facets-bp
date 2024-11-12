@@ -46,7 +46,7 @@
     },
     "env": {
       "LOG_LEVEL": "INFO",
-      "CALADAN": "${service.caladan.out.attributes.namespace}"
+      "CALADAN": "${deleted}"
     }
   }
 }
