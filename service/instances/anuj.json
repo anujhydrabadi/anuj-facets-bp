@@ -39,9 +39,9 @@
     },
     "env": {
       "LOG_LEVEL": "INFO",
-      "USERNAME": "${postgres.anuj-psql-4.out.interfaces.reader.username}",
-      "PASSWORD": "${postgres.anuj-psql-4.out.interfaces.reader.password}",
-      "URL": "${postgres.anuj-psql-4.out.interfaces.writer.connection_string}"
+      "USERNAME": "${deleted}",
+      "PASSWORD": "${deleted}",
+      "URL": "${deleted}"
     }
   }
 }
