@@ -9,7 +9,7 @@
     }
   },
   "kind": "service",
-  "disabled": false
+  "disabled": false,
   "provided": false,
   "version": "0.1",
   "spec": {
