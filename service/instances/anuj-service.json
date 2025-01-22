@@ -1,6 +1,5 @@
 {
-  "$schema": "https://facets-cloud.github.io/facets-schemas/schemas/service/service.schema.json",
-  "flavor": "default",
+  "flavor": "deployment",
   "metadata": {
     "labels": {},
     "github": {
