@@ -3,7 +3,7 @@
   "kind": "mysql",
   "flavor": "aurora",
   "version": "0.1",
-  "disabled": false,
+  "disabled": true,
   "provided": false,
   "lifecycle": "ENVIRONMENT_BOOTSTRAP",
   "depends_on": [],
