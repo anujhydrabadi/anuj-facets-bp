@@ -51,7 +51,7 @@
     },
     "env": {
       "LOG_LEVEL": "INFO",
-      "VAR": "${gcp-provider.gcpp.out.interfaces.cluster.endpoints}"
+      "VAR": "${gcp-provider.gcpp.out.interfaces.cluster.endpoint}"
     }
   }
 }
