@@ -50,7 +50,8 @@
       "volumes": {}
     },
     "env": {
-      "LOG_LEVEL": "INFO"
+      "LOG_LEVEL": "INFO",
+      "VAR": "${gcp-provider.gcpp.out.interfaces.cluster.endpoints}"
     }
   }
 }
