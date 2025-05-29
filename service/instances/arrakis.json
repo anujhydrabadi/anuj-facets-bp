@@ -1,6 +1,4 @@
 {
-  "$schema": "https://facets-cloud.github.io/facets-schemas/schemas/service/service.schema.json",
-  "flavor": "deployment",
   "metadata": {
     "labels": {
       "deliveryType": "MANUAL"
@@ -8,7 +6,6 @@
   },
   "kind": "service",
   "disabled": true,
-  "version": "0.1",
   "spec": {
     "enable_host_anti_affinity": false,
     "type": "application",
