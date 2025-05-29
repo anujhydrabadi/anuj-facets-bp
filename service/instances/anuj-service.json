@@ -49,7 +49,8 @@
       "volumes": {}
     },
     "env": {
-      "LOG_LEVEL": "INFO"
+      "LOG_LEVEL": "INFO",
+      "VAR": "${service.arrakis.out.interfaces.http.connection_string}"
     }
   }
 }
