@@ -1,0 +1,11 @@
+{
+  "kind": "service",
+  "flavor": "anuj",
+  "version": "1.0",
+  "disabled": true,
+  "spec": {
+    "release": {
+      "image": "${blueprint.self.artifacts.anuj-facets-bp-anujflavor}"
+    }
+  }
+}
