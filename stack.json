@@ -33,6 +33,12 @@
       "secret": true,
       "value": "dummy",
       "global": false
+    },
+    "PASSWORD": {
+      "secret": true,
+      "value": "default_password",
+      "global": false,
+      "description": "Database connection password"
     }
   }
 }
