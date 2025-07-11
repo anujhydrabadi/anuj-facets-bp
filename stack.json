@@ -51,6 +51,12 @@
       "value": "default_password3",
       "global": false,
       "description": "Database connection password3"
+    },
+    "PASSWORD4": {
+      "secret": true,
+      "value": "default_password4",
+      "global": false,
+      "description": "Database connection password4"
     }
   }
 }
