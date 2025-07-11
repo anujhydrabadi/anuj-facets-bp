@@ -39,6 +39,12 @@
       "value": "default_password",
       "global": false,
       "description": "Database connection password"
+    },
+    "PASSWORD2": {
+      "secret": true,
+      "value": "default_password2",
+      "global": false,
+      "description": "Database connection password2"
     }
   }
 }
