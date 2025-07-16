@@ -57,6 +57,12 @@
       "value": "default_password4",
       "global": false,
       "description": "Database connection password4"
+    },
+    "VAR": {
+      "secret": false,
+      "value": "VAL of VAR",
+      "global": false,
+      "description": "Database connection VAR"
     }
   }
 }
