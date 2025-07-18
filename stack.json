@@ -63,6 +63,18 @@
       "value": "VAL of VAR",
       "global": false,
       "description": "Database connection VAR"
+    },
+    "new": {
+      "secret": false,
+      "value": "userdef",
+      "global": false,
+      "description": "Database connection username"
+    },
+    "newer_secret": {
+      "secret": true,
+      "value": "userdefer",
+      "global": false,
+      "description": "Database connection usernameer"
     }
   }
 }
