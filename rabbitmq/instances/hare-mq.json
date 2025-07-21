@@ -19,10 +19,6 @@
     }
   },
   "advanced": {
-    "k8s": {
-      "rabbitmq": {
-        "values": {}
-      }
-    }
+    "inherit_from_base": false
   }
 }
