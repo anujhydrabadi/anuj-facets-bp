@@ -19,6 +19,6 @@
     }
   },
   "advanced": {
-    "inherit_from_base": false
+    "inherit_from_base": true
   }
 }
