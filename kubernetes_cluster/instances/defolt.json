@@ -10,7 +10,7 @@
   "advanced": {},
   "inputs": {
     "network_details": {
-      "resource_name": "defolt",
+      "resource_name": "defolt2",
       "resource_type": "network"
     }
   }
