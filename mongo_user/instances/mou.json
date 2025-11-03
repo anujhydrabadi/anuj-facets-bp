@@ -1,0 +1,40 @@
+{
+  "$schema": "https://facets-cloud.github.io/facets-schemas/schemas/mongo_user/mongo_user.schema.json",
+  "kind": "mongo_user",
+  "flavor": "default",
+  "version": "0.3",
+  "disabled": true,
+  "metadata": {},
+  "out": {},
+  "spec": {
+    "database": "stage",
+    "permissions": {
+      "p1": {
+        "permission": "createCollection,listCollections",
+        "database": "stage",
+        "collection": "",
+        "cluster": true
+      },
+      "p2": {
+        "permission": "find,update,insert",
+        "database": "stage",
+        "collection": "myCollection2",
+        "cluster": false
+      }
+    }
+  },
+  "inputs": {
+    "kubernetes_details": {
+      "resource_name": "default",
+      "resource_type": "kubernetes_cluster"
+    },
+    "mongodb_auth_operator_details": {
+      "resource_name": "maa",
+      "resource_type": "mongodb_auth_operator"
+    },
+    "mongo_details": {
+      "resource_name": "mongo",
+      "resource_type": "mongo"
+    }
+  }
+}
