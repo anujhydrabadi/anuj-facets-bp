@@ -3,7 +3,7 @@
   "flavor": "default",
   "version": "0.1",
   "metadata": {},
-  "disabled": true,
+  "disabled": false,
   "spec": {
     "size": {
       "cpu_limit": "100m",

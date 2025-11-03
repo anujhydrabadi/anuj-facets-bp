@@ -3,7 +3,7 @@
   "flavor": "aws_eks",
   "version": "0.2",
   "lifecycle": "ENVIRONMENT",
-  "disabled": true,
+  "disabled": false,
   "depends_on": [],
   "metadata": {},
   "spec": {},
