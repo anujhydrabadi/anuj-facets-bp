@@ -2,7 +2,7 @@
   "kind": "mongo_user",
   "flavor": "default",
   "version": "0.3",
-  "disabled": true,
+  "disabled": false,
   "metadata": {},
   "out": {},
   "spec": {

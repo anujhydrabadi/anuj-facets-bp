@@ -3,7 +3,7 @@
   "version": "0.2",
   "flavor": "k8s",
   "kind": "mongo",
-  "disabled": true,
+  "disabled": false,
   "metadata": {},
   "spec": {
     "authenticated": true,
