@@ -1,0 +1,20 @@
+{
+  "kind": "mongodb_auth_operator",
+  "flavor": "default",
+  "version": "0.1",
+  "metadata": {},
+  "disabled": true,
+  "spec": {
+    "size": {
+      "cpu_limit": "100m",
+      "memory_limit": "100Mi"
+    },
+    "values": {}
+  },
+  "inputs": {
+    "kubernetes_details": {
+      "resource_name": "default",
+      "resource_type": "kubernetes_cluster"
+    }
+  }
+}
