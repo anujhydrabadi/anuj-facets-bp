@@ -1,0 +1,17 @@
+{
+  "kind": "config_map",
+  "flavor": "k8s",
+  "version": "0.1",
+  "disabled": false,
+  "templatedOn": "field",
+  "metadata": {
+    "name": "{{current.uid}}-simplified"
+  },
+  "spec": {
+    "k8s": {
+      "data": {
+        "TEST": "{{current.data.value}}"
+      }
+    }
+  }
+}
