@@ -1,5 +1,5 @@
 {
-  "flavor": "default",
+  "flavor": "k8s",
   "metadata": {
     "labels": {},
     "github": {
