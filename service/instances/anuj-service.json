@@ -50,7 +50,8 @@
     },
     "env": {
       "LOG_LEVEL": "INFO",
-      "VAR": "${service.arrakis.out.interfaces.http.connection_string}"
+      "VAR": "${service.arrakis.out.interfaces.http.connection_string}",
+      "X": "${blueprint.self.secrets.PASSWORD4}"
     }
   }
 }
