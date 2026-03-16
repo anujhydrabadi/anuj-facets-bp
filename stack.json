@@ -75,6 +75,10 @@
       "value": "userdefer",
       "global": false,
       "description": "Database connection usernameer"
+    },
+    "SYNC1": {
+      "secret": true,
+      "global": false
     }
   }
 }
