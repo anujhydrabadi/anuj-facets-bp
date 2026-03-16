@@ -83,6 +83,10 @@
     "SYNC2": {
       "secret": true,
       "global": false
+    },
+    "SYNC3": {
+      "secret": true,
+      "global": false
     }
   }
 }
