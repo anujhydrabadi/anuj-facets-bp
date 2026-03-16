@@ -79,6 +79,10 @@
     "SYNC1": {
       "secret": true,
       "global": false
+    },
+    "SYNC2": {
+      "secret": true,
+      "global": false
     }
   }
 }
