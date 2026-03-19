@@ -7,12 +7,6 @@
     "plugins": []
   },
   "clusterVariablesMeta": {
-    "GOOGLE_CLIENT_ID": {
-      "secret": true,
-      "value": "test124123",
-      "global": true,
-      "description": "test12123"
-    },
     "PROFILE": {
       "secret": true,
       "value": "tesasd",
