@@ -87,10 +87,6 @@
     "SYNC3": {
       "secret": true,
       "global": false
-    },
-    "SYNC4": {
-      "secret": true,
-      "global": false
     }
   }
 }
