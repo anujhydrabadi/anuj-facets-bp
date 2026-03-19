@@ -51,7 +51,8 @@
     },
     "env": {
       "LOG_LEVEL": "INFO",
-      "VAR": "${gcp-provider.gcpp.out.interfaces.cluster.endpoint}"
+      "VAR": "${gcp-provider.gcpp.out.interfaces.cluster.endpoint}",
+      "SYNK": "${blueprint.self.secrets.SYNC2}"
     }
   }
 }
