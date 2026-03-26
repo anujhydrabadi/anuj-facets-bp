@@ -15,7 +15,7 @@
     "alerts": {
       "pod_pending_alert": {
         "disabled": false,
-        "interval": "15m",
+        "interval": "10m",
         "severity": "critical"
       },
       "pod_crashlooping_alert": {
