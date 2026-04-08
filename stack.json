@@ -15,12 +15,15 @@
     },
     "SYNC3": {
       "secret": true,
-      "global": false
+      "value": null,
+      "global": false,
+      "description": null
     },
     "X_FACETSINT_SERVICE_DOUBLE-FAULT_INTERFACES_READER_PASSWORD": {
       "secret": true,
       "value": "dummy",
-      "global": false
+      "global": false,
+      "description": null
     },
     "VAR": {
       "secret": false,
@@ -37,15 +40,20 @@
     "X_FACETSINT_MONGO_ANUJ-MONGODB_INTERFACES_WRITER_PASSWORD": {
       "secret": true,
       "value": "dummy",
-      "global": false
+      "global": false,
+      "description": null
     },
     "SYNC2": {
       "secret": true,
-      "global": false
+      "value": null,
+      "global": false,
+      "description": null
     },
     "SYNC1": {
       "secret": true,
-      "global": false
+      "value": null,
+      "global": false,
+      "description": null
     },
     "PASSWORD2": {
       "secret": true,
@@ -68,7 +76,8 @@
     "X_FACETSINT_ELASTICSEARCH_ANUJ-ES_INTERFACES_WRITER_PASSWORD": {
       "secret": true,
       "value": "mypass",
-      "global": false
+      "global": false,
+      "description": null
     },
     "PASSWORD4": {
       "secret": true,
@@ -81,11 +90,6 @@
       "value": "default_password3",
       "global": false,
       "description": "Database connection password3"
-    },
-    "V2TEST_SECRET": {
-      "secret": true,
-      "global": false,
-      "description": "test secret"
     }
   }
 }
