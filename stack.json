@@ -81,6 +81,12 @@
     "SYNC3": {
       "secret": true,
       "global": false
+    },
+    "V2TEST_VAR": {
+      "secret": false,
+      "value": "testvalue123",
+      "global": false,
+      "description": "v2 migration test variable"
     }
   }
 }
