@@ -6,7 +6,8 @@
   "spec": {
     "k8s": {
       "data": {
-        "KEY1": "value1"
+        "KEY1": "value1",
+        "KEY2": "updated_value"
       }
     }
   }
