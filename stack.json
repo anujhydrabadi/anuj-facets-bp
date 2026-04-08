@@ -86,6 +86,11 @@
       "secret": false,
       "value": "valueA",
       "global": false
+    },
+    "V2TEST_VAR_B": {
+      "secret": false,
+      "value": "valueB",
+      "global": false
     }
   }
 }
