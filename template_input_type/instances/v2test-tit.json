@@ -2,7 +2,8 @@
   "spec": {
     "fields": [
       "alpha",
-      "beta"
+      "beta",
+      "gamma"
     ]
   }
 }
