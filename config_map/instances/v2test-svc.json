@@ -1,0 +1,13 @@
+{
+  "kind": "config_map",
+  "flavor": "k8s",
+  "version": "0.1",
+  "disabled": false,
+  "spec": {
+    "k8s": {
+      "data": {
+        "KEY1": "value1"
+      }
+    }
+  }
+}
