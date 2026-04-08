@@ -7,50 +7,23 @@
     "plugins": []
   },
   "clusterVariablesMeta": {
-    "PROFILE": {
-      "secret": true,
-      "value": "tesasd",
-      "global": true,
-      "description": "the activdasde profile"
+    "new": {
+      "secret": false,
+      "value": "userdef",
+      "global": false,
+      "description": "Database connection username"
     },
-    "X_FACETSINT_ELASTICSEARCH_ANUJ-ES_INTERFACES_WRITER_PASSWORD": {
+    "SYNC3": {
       "secret": true,
-      "value": "mypass",
-      "global": false
-    },
-    "X_FACETSINT_MONGO_ANUJ-MONGODB_INTERFACES_WRITER_PASSWORD": {
-      "secret": true,
-      "value": "dummy",
-      "global": false
+      "value": null,
+      "global": false,
+      "description": null
     },
     "X_FACETSINT_SERVICE_DOUBLE-FAULT_INTERFACES_READER_PASSWORD": {
       "secret": true,
       "value": "dummy",
-      "global": false
-    },
-    "PASSWORD": {
-      "secret": true,
-      "value": "default_password",
       "global": false,
-      "description": "Database connection password"
-    },
-    "PASSWORD2": {
-      "secret": true,
-      "value": "default_password2",
-      "global": false,
-      "description": "Database connection password2"
-    },
-    "PASSWORD3": {
-      "secret": true,
-      "value": "default_password3",
-      "global": false,
-      "description": "Database connection password3"
-    },
-    "PASSWORD4": {
-      "secret": true,
-      "value": "default_password4",
-      "global": false,
-      "description": "Database connection password4"
+      "description": null
     },
     "VAR": {
       "secret": false,
@@ -58,35 +31,65 @@
       "global": false,
       "description": "Database connection VAR"
     },
-    "new": {
-      "secret": false,
-      "value": "userdef",
-      "global": false,
-      "description": "Database connection username"
-    },
     "newer_secret": {
       "secret": true,
       "value": "userdefer",
       "global": false,
       "description": "Database connection usernameer"
     },
-    "SYNC1": {
+    "X_FACETSINT_MONGO_ANUJ-MONGODB_INTERFACES_WRITER_PASSWORD": {
       "secret": true,
-      "global": false
+      "value": "dummy",
+      "global": false,
+      "description": null
     },
     "SYNC2": {
       "secret": true,
-      "global": false
-    },
-    "SYNC3": {
-      "secret": true,
-      "global": false
-    },
-    "V2TEST_VAR": {
-      "secret": false,
-      "value": "testvalue123",
+      "value": null,
       "global": false,
-      "description": "v2 migration test variable"
+      "description": null
+    },
+    "SYNC1": {
+      "secret": true,
+      "value": null,
+      "global": false,
+      "description": null
+    },
+    "PASSWORD2": {
+      "secret": true,
+      "value": "default_password2",
+      "global": false,
+      "description": "Database connection password2"
+    },
+    "PROFILE": {
+      "secret": true,
+      "value": "tesasd",
+      "global": true,
+      "description": "the activdasde profile"
+    },
+    "PASSWORD": {
+      "secret": true,
+      "value": "default_password",
+      "global": false,
+      "description": "Database connection password"
+    },
+    "X_FACETSINT_ELASTICSEARCH_ANUJ-ES_INTERFACES_WRITER_PASSWORD": {
+      "secret": true,
+      "value": "mypass",
+      "global": false,
+      "description": null
+    },
+    "PASSWORD4": {
+      "secret": true,
+      "value": "default_password4",
+      "global": false,
+      "description": "Database connection password4"
+    },
+    "PASSWORD3": {
+      "secret": true,
+      "value": "default_password3",
+      "global": false,
+      "description": "Database connection password3"
     }
   }
 }
