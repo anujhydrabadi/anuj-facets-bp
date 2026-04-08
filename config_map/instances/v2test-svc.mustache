@@ -3,14 +3,10 @@
   "flavor": "k8s",
   "version": "0.1",
   "disabled": false,
-  "templatedOn": "field",
-  "metadata": {
-    "name": "v2test-svc-{{current.uid}}"
-  },
   "spec": {
     "k8s": {
       "data": {
-        "MUSTACHE_KEY": "{{current.data.number}}"
+        "KEY1": "value1"
       }
     }
   }
