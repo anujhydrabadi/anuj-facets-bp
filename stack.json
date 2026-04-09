@@ -73,6 +73,12 @@
       "global": false,
       "description": "Database connection password"
     },
+    "TEST": {
+      "secret": true,
+      "value": null,
+      "global": false,
+      "description": null
+    },
     "X_FACETSINT_ELASTICSEARCH_ANUJ-ES_INTERFACES_WRITER_PASSWORD": {
       "secret": true,
       "value": "mypass",
