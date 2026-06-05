@@ -63,7 +63,7 @@
     },
     "RAPTOR_TEST_VAR": {
       "secret": false,
-      "value": "hello-default",
+      "value": "hello-v2",
       "global": false,
       "description": "raptor CLI test variable"
     },
