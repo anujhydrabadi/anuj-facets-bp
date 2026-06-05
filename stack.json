@@ -89,7 +89,7 @@
       "secret": true,
       "value": "dummy",
       "global": false,
-      "description": "raptor CLI test secret"
+      "description": "updated description"
     },
     "X_FACETSINT_ELASTICSEARCH_ANUJ-ES_INTERFACES_WRITER_PASSWORD": {
       "secret": true,
