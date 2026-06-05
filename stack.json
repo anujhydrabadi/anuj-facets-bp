@@ -61,6 +61,12 @@
       "global": false,
       "description": null
     },
+    "RAPTOR_TEST_VAR": {
+      "secret": false,
+      "value": "hello-default",
+      "global": false,
+      "description": "raptor CLI test variable"
+    },
     "PASSWORD2": {
       "secret": true,
       "value": "default_password2",
