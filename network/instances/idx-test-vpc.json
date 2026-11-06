@@ -1,0 +1,23 @@
+{
+  "kind": "network",
+  "flavor": "aws_network",
+  "version": "1.0",
+  "metadata": {
+    "name": "idx-test-vpc"
+  },
+  "disabled": false,
+  "spec": {
+    "vpc_cidr": "10.0.0.0/16",
+    "auto_select_azs": true,
+    "nat_gateway": {
+      "strategy": "single"
+    }
+  },
+  "inputs": {
+    "cloud_account": {
+      "resource_type": "cloud_account",
+      "resource_name": "idx-test-account",
+      "output_name": "default"
+    }
+  }
+}
