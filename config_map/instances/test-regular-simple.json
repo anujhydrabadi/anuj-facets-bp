@@ -8,7 +8,7 @@
   "spec": {
     "k8s": {
       "data": {
-        "KEY": "value"
+        "KEY": "cleanup-test-1"
       }
     }
   },
