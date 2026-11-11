@@ -7,16 +7,9 @@
     "name": "pr629-empty"
   },
   "spec": {
-    "data": {
-      "k": {
-        "key": "k",
-        "value": "v"
-      }
-    },
+    "data": {},
     "extra": {
-      "items": [
-        "a"
-      ],
+      "items": [],
       "keep": "x"
     }
   }
