@@ -73,12 +73,6 @@
       "global": false,
       "description": "Database connection password2"
     },
-    "ZZ_PROBE_199_A": {
-      "secret": true,
-      "value": null,
-      "global": false,
-      "description": null
-    },
     "PROFILE": {
       "secret": true,
       "value": "tesasd",
