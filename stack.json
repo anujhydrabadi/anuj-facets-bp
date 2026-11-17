@@ -61,12 +61,6 @@
       "global": false,
       "description": null
     },
-    "ZZ_PROBE_199_B": {
-      "secret": true,
-      "value": null,
-      "global": false,
-      "description": null
-    },
     "PASSWORD2": {
       "secret": true,
       "value": "default_password2",
