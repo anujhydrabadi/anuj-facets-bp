@@ -7,6 +7,12 @@
     "plugins": []
   },
   "clusterVariablesMeta": {
+    "ZZ_PROBE_199": {
+      "secret": true,
+      "value": null,
+      "global": false,
+      "description": null
+    },
     "new": {
       "secret": false,
       "value": "userdef",
